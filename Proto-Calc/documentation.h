@@ -28,7 +28,32 @@
 #include "path.c"       // atalhos para resolução de problemas simples de terminal no código 
 
 
+/*  INICIAR pseudo-código(alpha){
+ * 
+ *      EXIBIR logo do projeto.
+ *      APERTE qualquer tecla para proseguir.
+ *      LIMPAR tela.
+ *      INICIAR laço de repetição (01)
+ *      {
+ *          EXIBIR menu(01).
+ *          VALIDAR opções para o menu(01)
+ *          SELECIONAR opção(x) do menu(01)
+ *          {
+ *          LIMPAR tela.
+ *              EXIBIR menu(02).
+ *              SELECIONAR opção(x) do menu(02)
+ *              {
+ *              LIMPAR tela.
+ *                  EXECUTAR função.
+ *              }
+ *          }
+ *      } ENCERRAR laço de repetição (01) seleciona a opção(09) do menu(01) "Sair".
+ *      Exibir creditos ao sair.
+ * 
+ *  } FIM do pseudo-código(alpha).
+ * */
+int cmdLimpar();    // Atalho para limpar o terminal Windows.  
+int cmdPause();     // Atalho para congelar o terminal Windows.
+int exibirERRO();   // EXIBE o inicio de frase "ERRO" com um *beap*
 
-
-int cmdLimpar();  // Atalho para limpar o terminal Windows.  
-int cmdPause();   // Atalho para congelar o terminal Windows.
+void mensagemK();   // EXIBE a mensagem K após selecionar as opções 1,2 ou 3 do menu principal e recolhe o valor K.

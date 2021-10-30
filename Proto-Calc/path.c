@@ -15,3 +15,7 @@ int cmdLimpar(){
 int cmdPause(){
     getchar();
 };
+
+int exibirERRO(){
+    printf("\n\7/!\\ ERRO: ");
+};
