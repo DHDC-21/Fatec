@@ -56,4 +56,4 @@ int cmdLimpar();    // Atalho para limpar o terminal Windows.
 int cmdPause();     // Atalho para congelar o terminal Windows.
 int exibirERRO();   // EXIBE o inicio de frase "ERRO" com um *beap*
 
-void mensagemK();   // EXIBE a mensagem K após selecionar as opções 1,2 ou 3 do menu principal e recolhe o valor K.
+void mensagemK(int k);   // EXIBE a mensagem K após selecionar as opções 1,2 ou 3 do menu principal e recolhe o valor K.g
