@@ -5,7 +5,7 @@
 #include <locale.h> // Biblioteca usada para se obter acentuação no terminal
 #include <time.h>
 
-#include "documentation.h"
+#include "docCalc.h"
 
 
 
