@@ -6,7 +6,64 @@
 #include <math.h>   // Biblioteca usada para realizar operações matemáticas avançadas
 #include <time.h>
 
-void exibirMenuPrincipal(){
+
+
+/*
+ *  (ABAIXO) Atalhos de comando para  o terminal.
+ */
+void cmdLimpar(void){
+    system("cls");
+};
+
+void cmdPause(void){
+    getchar();
+};
+
+void exibirERRO(void){
+    printf("\n\7\/!\\ ERRO: ");
+};
+
+void buffer(void){
+    fflush(stdin);
+};
+
+void validadorMenu1(int validarEntrada){
+    int validarEntrada;
+    do{
+        printf("\n\n|==> ");
+        scanf("%d",&validarEntrada);
+        if(validarEntrada <= 1 && validarEntrada >= 9){
+            exibirERRO();
+            printf("Opção inválida, por favor tente novamente.");
+            cmdPause();
+            cmdLimpar()
+        }
+    } while (validarEntrada >=1 && validarEntrada <=9);
+    return validarEntrada;
+};
+
+void validadorSubMenu(int validarEntrada){
+    int validarEntrada;
+    do{
+        printf("\n\n|==> ");
+        scanf("%d",&validarEntrada);
+        if(validarEntrada <= 1 && validarEntrada >= 4){
+            exibirERRO();
+            printf("Opção inválida, por favor tente novamente.");
+            cmdPause();
+            cmdLimpar()
+        }
+    } while (validarEntrada >=1 && validarEntrada <=9);
+    return validarEntrada;
+};
+
+
+
+
+/*
+ *  (ABAIXO) Menus para a calculadora.
+ */
+void exibirMenuPrincipal(void){
     printf("\n================================================");
     printf("\n\t MENU PRINCIPAL:\n");
     printf("\n1. f(x) = k");
@@ -21,7 +78,7 @@ void exibirMenuPrincipal(){
     printf("\n================================================");
 };
 
-void exibirSubMenu(){
+void exibirSubMenu(void){
     printf("\n================================================");
     printf("\nSUBMENU 1 - Para a função escolhida, você pode:");
     printf("\n1. Calcular a aplicação de um valor na função f(x).");
@@ -37,64 +94,54 @@ void mensagemK(int k){
     printf("\n\n|==> ");
     int k; char validador = 'X';
     do{
-        scanf("&d",k);
-        if(k <= 0){
-            exibirERRO();
-            printf("Valor invalido, digite um número > 0.");
-        } else{
-            validador = 'O';
-        }
-    }while(validador =! 'X')
+        k <= 0 ? validador = 'X' : validador = 'O'
+        validador == 'X' ? 
+    }while(validador =! 'O')
+    scanf("%d",&k);
+    return k;
 };
 
 
-// (ABAIXO) Bibliotecas padrões da linguagem C, usados nesse projeto.
-#include <stdlib.h>
-#include <stdio.h>  // Biblioteca padrão de entrada e saida do terminal
-#include <locale.h> // Biblioteca usada para se obter acentuação no terminal
-#include <time.h>
 
 
-
-
-int cmdLimpar(){
-    system("cls");
-};
-
-int cmdPause(){
-    getchar();
-};
-
-int exibirERRO(){
-    printf("\n\7/!\\ ERRO: ");
-};
-
-// (ABAIXO) As principais operações do menu principal:
+/*
+ *  (ABAIXO) As principais operações do menu principal:
+ */
 // 1. f(x) = k
-void funcFX_k(int x){
+void funcaoFx1(int x, int x){
     int x, k;
-    printf("\nf(%d) = k",x,k);
+    printf("\nf(%d) = %d",x,k);
 };
+void derivadaFx1(int x, int k){
+    int x, k;
+    printf("\nf'(%d) = %d",x,k=0);
+};
+void integralFx1(int x, int k){
+    int x, k;
+    printf();
+};
+
+
 
 // 2. f(x) = x^k
-void funcFX_(int x, int k){
+void funcaoFx2(int x, int k){
     int x, k;
 };
 
 // 3. f(x) = k^x
-void funcFX_(int x, int k){};
+void funcaoFx3(int x, int k){};
 
 // 4. f(x) = ln(x)
-void funcFX_(int x, int k){};
+void funcaoFx4(int x, int k){};
 
 // 5. f(x) = 1/x
-void funcFX_(int x, int k){};
+void funcaoFx5(int x, int k){};
 
 // 6. f(x) = sen(x)
-void funcFX_(int x, int k){};
+void funcaoFx6(int x, int k){};
 
 // 7. f(x) = cos(x)
-void funcFX_(int x, int k){};
+void funcaoFx7(int x, int k){};
 
 // 8. f(x) = tg(x)
-void funcFX_(int x, int k){};
+void funcaoFx8(int x, int k){};

@@ -5,7 +5,7 @@
 #include <locale.h> // Biblioteca usada para se obter acentuação no terminal
 #include <time.h>
 
-#include "docCalc.h"
+#include "docProtoCalc.h"
 
 
 
@@ -14,23 +14,11 @@ int main(){
     setlocale(LC_ALL,"NULL");
     printf("Olá Mundo!");
     
-    int menu01 = 0, menu02 = 0, k = 0;
+    int caseeMenu1, caseeMenu2, k, x;
     do{
         exibirMenuPrincipal();
-        // %- Validador de entrada
-        do
-        {
-            printf("\n\n|==> ");
-            scanf("&d",menu01);
-            if(menu01 <= 1 && menu01 >= 9){
-                exibirERRO();
-                printf("Opção inválida, por favor tente novamente.");
-                cmdPause();
-                cmdLimpar();
-            }
-        } while (menu01 >=1 && menu01 <=9);
-        
-        switch (menu01)
+        validadorMenu1(caseeMenu1);
+        switch (caseeMenu1)
         {
         case 1: /* 1. f(x) = k */
             do
@@ -39,6 +27,19 @@ int main(){
                 cmdPause();
                 cmdLimpar();
                 exibirSubMenu();
+                validadorSubMenu(caseeMenu2);
+                switch (caseeMenu2)
+                {
+                case 1:     // .Função
+                    funcaoFx1();
+                    break;
+                case 2:     // ./Derivada
+                    break;
+                case 3:     // .Integral
+                    break;
+                case 4:     // .Sair
+                    break;
+                }
                 
             } while (menu02 =! 4);
             break;
@@ -66,15 +67,8 @@ int main(){
         case 9:
             /* 9. Sair */
             break;
-        
-        default:
-            exibirERRO();
-            printf("Opção não encontrada, por favor tente novamente.");
-            cmdPause();
-            cmdLimpar();
-            break;
         }
-    }while(menu01=!9);
+    }while(caseeMenu1=!9);
     
     FIM();
 

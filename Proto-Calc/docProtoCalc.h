@@ -22,10 +22,7 @@
 #include <math.h>   // Biblioteca usada para realizar operações matemáticas avançadas
 #include <time.h>
 
-// (ABAIXO) Prototipação de funções em C.
-#include "function.c"   // resoluções de calculo
-#include "menu.c"       // menus para exibir no código principal
-#include "path.c"       // atalhos para resolução de problemas simples de terminal no código 
+#include "funcProtoCalc.c"
 
 
 /*  INICIAR pseudo-código(alpha){
@@ -47,7 +44,7 @@
  *                  EXECUTAR função.
  *              }
  *          }
- *      } ENCERRAR laço de repetição (01) seleciona a opção(09) do menu(01) "Sair".
+ *      } ENCERRAR laço de repetição (01) ao selecionar a opção(09) do menu(01) "Sair".
  *      Exibir creditos ao sair.
  * 
  *  } FIM do pseudo-código(alpha).
