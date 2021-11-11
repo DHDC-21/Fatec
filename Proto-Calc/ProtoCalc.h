@@ -22,7 +22,10 @@
 #include <math.h>   // Biblioteca usada para realizar operações matemáticas avançadas
 #include <time.h>
 
-#include "funcProtoCalc.c"
+#include "ProtoCalc.c"
+#include "voidDerivadas.c"
+#include "voidFuncoes.c"
+#include "voidIntegrais.c"
 
 
 /*  INICIAR pseudo-código(alpha){
