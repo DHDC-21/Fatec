@@ -21,7 +21,6 @@ void funcaoFx1(int x, int k){
     printf("\nf(%d) = %d",x,k);
 };
 
-
 // 2. f(x) = x^k
 void funcaoFx2(int x, int k){
     int x, k;
@@ -31,7 +30,6 @@ void funcaoFx2(int x, int k){
     int resultado = pow(x,k);    // potencia (variavel, expoente)
     printf("\nf(%d) = %d",x,resultado);
 };
-
 
 // 3. f(x) = k^x
 void funcaoFx3(int x, int k){
@@ -54,7 +52,6 @@ void funcaoFx4(int x){
     printf("");
 };
 
-
 // 5. f(x) = 1/x
 void funcaoFx5(int x){
     int x;
@@ -75,5 +72,25 @@ void funcaoFx5(int x){
     buffer();
     scanf("%d",&x);
     int resultado = sin(x);
+    printf("\nf(%d) = %d",x,resultado);
+};
+
+// 7. f(x) = cos(x)
+void funcaoFx5(int x){
+    int x;
+    printf("\nDigite o valor de 𝑥 desejado em graus.");
+    buffer();
+    scanf("%d",&x);
+    int resultado = cos(x);
+    printf("\nf(%d) = %d",x,resultado);
+};
+
+// 8. f(x) = tg(x)
+void funcaoFx5(int x){
+    int x;
+    printf("\nDigite o valor de 𝑥 desejado em graus.");
+    buffer();
+    scanf("%d",&x);
+    int resultado = tan(x);
     printf("\nf(%d) = %d",x,resultado);
 };
