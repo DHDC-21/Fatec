@@ -66,7 +66,7 @@ void funcaoFx5(int x){
 };
 
 // 6.  f(x) = sen(x)
-void funcaoFx5(int x){
+void funcaoFx6(int x){
     int x;
     printf("\nDigite o valor de 𝑥 desejado em graus.");
     buffer();
@@ -76,7 +76,7 @@ void funcaoFx5(int x){
 };
 
 // 7. f(x) = cos(x)
-void funcaoFx5(int x){
+void funcaoFx7(int x){
     int x;
     printf("\nDigite o valor de 𝑥 desejado em graus.");
     buffer();
@@ -86,7 +86,7 @@ void funcaoFx5(int x){
 };
 
 // 8. f(x) = tg(x)
-void funcaoFx5(int x){
+void funcaoFx8(int x){
     int x;
     printf("\nDigite o valor de 𝑥 desejado em graus.");
     buffer();

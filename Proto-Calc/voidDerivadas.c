@@ -48,7 +48,7 @@ void derivadaFx3(int x, int k){
     printf("\nDigite o valor de x desejado.\t");
     buffer();
     scanf("%d",x);
-    int resultado = pow(k,x) * log(x); 
+    int resultado = pow(k,x) * log(|x|); 
     printf("\nf'(%d) = %d",x,resultado);                                                                                                                 
 };
 
@@ -68,12 +68,12 @@ void derivadaFx4(int x){
  *  5.  f(x) = 1/x
  *            [1/x]' = ln(x)
  */
-void derivadaFx4(int x){
+void derivadaFx5(int x){
     int x;
     printf("\nDigite o valor de x desejado.\t");
     buffer();
     scanf("%d",x);
-    int resultado = ln(x);
+    int resultado = log(x);
     printf("\nf'(%d) = %d",x,resultado);
 };
 
@@ -81,7 +81,7 @@ void derivadaFx4(int x){
  *  6.  f(x) = sen(x)
  *            [sen(x)]' = cos(x)
  */
-void derivadaFx4(int x){
+void derivadaFx6(int x){
     int x;
     printf("\nDigite o valor de x desejado em radianos:\tr");
     buffer();
@@ -94,7 +94,7 @@ void derivadaFx4(int x){
  *  7.  f(x) = cos(x)
  *            [cos(x)]' = sen(x)
  */
-void derivadaFx4(int x){
+void derivadaFx7(int x){
     int x;
     printf("\nDigite o valor de x desejado em radianos:\tr");
     buffer();
@@ -107,7 +107,7 @@ void derivadaFx4(int x){
  *  8.  f(x) = tg(x)
  *            [tg(x)]' = sec²(x)
  */
-void derivadaFx4(int x){
+void derivadaFx8(int x){
     int x;
     printf("\nDigite o valor de x desejado em radianos:\tr");
     buffer();

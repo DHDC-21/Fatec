@@ -74,7 +74,7 @@ void integralFx3(int k){
     buffer();
     scanf("%d",b);
 
-    I = (pow(k,a) / ln(a)) - (pow(k,b) / ln(b));
+    I = (pow(k,a) / log(a)) - (pow(k,b) / log(b));
 
     printf("I(%d,%d) = %d",a,b,I);
 };
@@ -86,8 +86,8 @@ void integralFx3(int k){
  * I(a,b) = f(a) - f(b)
  * I = ln(x) dx = x*[ln(x)-1] + C
  */]
-void integralFx4(int k){
-    int a, b, I, k;
+void integralFx4(void){
+    int a, b, I;
     
     printf("\nDigite o valor de a e b desejado.");
     printf("\n[a]==>\t");
@@ -97,7 +97,7 @@ void integralFx4(int k){
     buffer();
     scanf("%d",b);
 
-    I = (a * (ln(a)-1)) - (b * (ln(b)-1));
+    I = (a * (log(a)-1)) - (b * (log(b)-1));
 
     printf("I(%d,%d) = %d",a,b,I);
 };
@@ -109,7 +109,7 @@ void integralFx4(int k){
  * I(a,b) = f(a) - f(b)
  * I = 1/x dx = ln(|x|) + C
  */
-void integralFx5(int k){
+void integralFx5(void){
     int a, b, I, k;
     
     printf("\nDigite o valor de a e b desejado.");
@@ -120,7 +120,7 @@ void integralFx5(int k){
     buffer();
     scanf("%d",b);
 
-    I = ln(|a|) - ln(|b|);
+    I = log(|a|) - log(|b|);
 
     printf("I(%d,%d) = %d",a,b,I);
 };
@@ -132,7 +132,7 @@ void integralFx5(int k){
  * I(a,b) = f(a) - f(b)
  * I = sen(x) dx = -cos(x) + C
  */
-void integralFx6(int k){
+void integralFx6(void){
     int a, b, I, k;
     
     printf("\nDigite o valor de a e b desejado.");
@@ -155,7 +155,7 @@ void integralFx6(int k){
  * I(a,b) = f(a) - f(b)
  * I = cos(x) dx = sen(x) + C
  */
-void integralFx7(int k){
+void integralFx7(void){
     int a, b, I, k;
     
     printf("\nDigite o valor de a e b desejado.");
@@ -178,7 +178,7 @@ void integralFx7(int k){
  * I(a,b) = f(a) - f(b)
  * I = tg(x) dx = -ln(|cos(x)|) + C
  */
-void integralFx8(int k){
+void integralFx8(void){
     int a, b, I, k;
     
     printf("\nDigite o valor de a e b desejado.");
@@ -189,7 +189,7 @@ void integralFx8(int k){
     buffer();
     scanf("%d",b);
 
-    I = (-ln(|cos(a)|)) -(-ln(|cos(b)|));
+    I = (-log(|cos(a)|)) -(-log(|cos(b)|));
 
     printf("I(%d,%d) = %d",a,b,I);
 };

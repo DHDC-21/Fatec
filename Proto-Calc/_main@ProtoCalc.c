@@ -31,28 +31,28 @@ int main(){
                 validadorSubMenu(caseeMenu2);
                 switch (caseeMenu2)
                 {
-                case 1:     // .Função
+                case 1:
                     cmdPause();
                     cmdLimpar();
                     funcaoFx1(x,k);
                     cmdPause();
                     cmdLimpar();
                     break;
-                case 2:     // .Derivada
+                case 2:
                     cmdPause();
                     cmdLimpar();
                     derivadaFx1(x,k);
                     cmdPause();
                     cmdLimpar();
                     break;
-                case 3:     // .Integral
+                case 3:
                     cmdPause();
                     cmdLimpar();
                     integralFx1(k);
                     cmdPause();
                     cmdLimpar();
                     break;
-                case 4:     // .Sair
+                case 4:
                     cmdLimpar();
                     printf("\nSaindo da opção 1, onde f(x) = k");
                     cmdPause();
@@ -73,28 +73,28 @@ int main(){
                 validadorSubMenu(caseeMenu2);
                 switch (caseeMenu2)
                 {
-                case 1:     // .Função
+                case 1:
                     cmdPause();
                     cmdLimpar();
                     funcaoFx2(x,k);
                     cmdPause();
                     cmdLimpar();
                     break;
-                case 2:     // .Derivada
+                case 2:
                     cmdPause();
                     cmdLimpar();
                     derivadaFx2(x,k);
                     cmdPause();
                     cmdLimpar();
                     break;
-                case 3:     // .Integral
+                case 3:
                     cmdPause();
                     cmdLimpar();
                     integralFx2(k);
                     cmdPause();
                     cmdLimpar();
                     break;
-                case 4:     // .Sair
+                case 4:
                     cmdLimpar();
                     printf("\nSaindo da opção 1, onde f(x) = x^k");
                     cmdPause();
@@ -115,28 +115,28 @@ int main(){
                 validadorSubMenu(caseeMenu2);
                 switch (caseeMenu2)
                 {
-                case 1:     // .Função
+                case 1:
                     cmdPause();
                     cmdLimpar();
                     funcaoFx3(x,k);
                     cmdPause();
                     cmdLimpar();
                     break;
-                case 2:     // .Derivada
+                case 2:
                     cmdPause();
                     cmdLimpar();
                     derivadaFx3(x,k);
                     cmdPause();
                     cmdLimpar();
                     break;
-                case 3:     // .Integral
+                case 3:
                     cmdPause();
                     cmdLimpar();
                     integralFx3(k);
                     cmdPause();
                     cmdLimpar();
                     break;
-                case 4:     // .Sair
+                case 4:
                     cmdLimpar();
                     printf("\nSaindo da opção 3, onde f(x) = k^x");
                     cmdPause();
@@ -155,18 +155,30 @@ int main(){
                 validadorSubMenu();
                 switch (caseeMenu2)
                 {
-                case 1: // função
-                    /* code */
+                case 1:
+                    cmdPause();
+                    cmdLimpar();
+                    funcaoFx4(x);
+                    cmdPause();
+                    cmdLimpar();
                     break;
                 case 2:
-                    /* code */
-                    break;
-                case 3: // integral
-                    /* code */
-                    break;
-                case 4: // derivada
+                    cmdPause();
                     cmdLimpar();
-                    printf("\nSaindo da opção 0, onde f(x) = 0");
+                    derivaraFx4(x);
+                    cmdPause();
+                    cmdLimpar();
+                    break;
+                case 3:
+                    cmdPause();
+                    cmdLimpar();
+                    integralFx4();
+                    cmdPause();
+                    cmdLimpar();
+                    break;
+                case 4:
+                    cmdLimpar();
+                    printf("\nSaindo da opção 4, onde f(x) = ln(x)");
                     cmdPause();
                     cmdLimpar();
                     break;
@@ -181,18 +193,30 @@ int main(){
                 validadorSubMenu();
                 switch (caseeMenu2)
                 {
-                case 1: // função
-                    /* code */
+                case 1:
+                    cmdPause();
+                    cmdLimpar();
+                    funcaoFx5(x);
+                    cmdPause();
+                    cmdLimpar();
                     break;
                 case 2:
-                    /* code */
-                    break;
-                case 3: // integral
-                    /* code */
-                    break;
-                case 4: // derivada
+                    cmdPause();
                     cmdLimpar();
-                    printf("\nSaindo da opção 0, onde f(x) = 0");
+                    derivadaFx5(x);
+                    cmdPause();
+                    cmdLimpar();
+                    break;
+                case 3:
+                    cmdPause();
+                    cmdLimpar();
+                    integralFx5();
+                    cmdPause();
+                    cmdLimpar();
+                    break;
+                case 4:
+                    cmdLimpar();
+                    printf("\nSaindo da opção 5, onde f(x) = 1/x");
                     cmdPause();
                     cmdLimpar();
                     break;
@@ -207,18 +231,30 @@ int main(){
                 validadorSubMenu();
                 switch (caseeMenu2)
                 {
-                case 1: // função
-                    /* code */
+                case 1:
+                    cmdPause();
+                    cmdLimpar();
+                    funcaoFx6(x);
+                    cmdPause();
+                    cmdLimpar();
                     break;
                 case 2:
-                    /* code */
-                    break;
-                case 3: // integral
-                    /* code */
-                    break;
-                case 4: // derivada
+                    cmdPause();
                     cmdLimpar();
-                    printf("\nSaindo da opção 0, onde f(x) = 0");
+                    derivadaFx6(x);
+                    cmdPause();
+                    cmdLimpar();
+                    break;
+                case 3:
+                    cmdPause();
+                    cmdLimpar();
+                    integralFx6();
+                    cmdPause();
+                    cmdLimpar();
+                    break;
+                case 4:
+                    cmdLimpar();
+                    printf("\nSaindo da opção 6, onde f(x) = sen(x)");
                     cmdPause();
                     cmdLimpar();
                     break;
@@ -233,18 +269,30 @@ int main(){
                 validadorSubMenu();
                 switch (caseeMenu2)
                 {
-                case 1: // função
-                    /* code */
+                case 1:
+                    cmdPause();
+                    cmdLimpar();
+                    funcaoFx7(x);
+                    cmdPause();
+                    cmdLimpar();
                     break;
                 case 2:
-                    /* code */
-                    break;
-                case 3: // integral
-                    /* code */
-                    break;
-                case 4: // derivada
+                    cmdPause();
                     cmdLimpar();
-                    printf("\nSaindo da opção 0, onde f(x) = 0");
+                    derivadaFx7(x);
+                    cmdPause();
+                    cmdLimpar();
+                    break;
+                case 3:
+                    cmdPause();
+                    cmdLimpar();
+                    integralFx7();
+                    cmdPause();
+                    cmdLimpar();
+                    break;
+                case 4:
+                    cmdLimpar();
+                    printf("\nSaindo da opção 7, onde f(x) = cos(x)");
                     cmdPause();
                     cmdLimpar();
                     break;
@@ -259,18 +307,30 @@ int main(){
                 validadorSubMenu();
                 switch (caseeMenu2)
                 {
-                case 1: // função
-                    /* code */
+                case 1:
+                    cmdPause();
+                    cmdLimpar();
+                    funcaoFx8(x);
+                    cmdPause();
+                    cmdLimpar();
                     break;
                 case 2:
-                    /* code */
-                    break;
-                case 3: // integral
-                    /* code */
-                    break;
-                case 4: // derivada
+                    cmdPause();
                     cmdLimpar();
-                    printf("\nSaindo da opção 0, onde f(x) = 0");
+                    derivadaFx8(x);
+                    cmdPause();
+                    cmdLimpar();
+                    break;
+                case 3:
+                    cmdPause();
+                    cmdLimpar();
+                    integralFx8();
+                    cmdPause();
+                    cmdLimpar();
+                    break;
+                case 4:
+                    cmdLimpar();
+                    printf("\nSaindo da opção 8, onde f(x) = tg(x)");
                     cmdPause();
                     cmdLimpar();
                     break;
@@ -289,7 +349,7 @@ int main(){
 
 };
 
-int FIM(){
+int FIM(void){
     printf("
         \nPROJETO: \tProtoCalc
         \nVERSÃO: \tAlpha
